@@ -1,0 +1,5 @@
+patientId,name,age,lmp,gravidaPara,clinicalIndication,scanDate,createdAt,updatedAt
+PT-2026-8841,Elena Rostova,29,2026-01-15,G2P1,Routine 2nd Trimester Biometry & Anomaly Scan,2026-08-05,2026-08-06T07:16:12.911Z,2026-08-06T07:16:12.911Z
+PT-2026-9102,Amara Okafor,32,2026-02-01,G1P0,Fetal Growth Restriction (FGR) & Doppler Screening,2026-08-05,2026-08-06T07:16:12.911Z,2026-08-06T07:16:12.911Z
+PT-2026-7430,Sophia Patel,26,2025-12-10,G3P2,Late 2nd Trimester Profile & Femur Evaluation,2026-08-05,2026-08-06T07:16:12.911Z,2026-08-06T07:16:12.911Z
+PT-2026-4870,Diksha Yadav,27,2000-03-21,G3P1,Routine 2 trimester anomaly,2026-08-06,2026-08-06T07:20:03.870Z,2026-09-03T08:28:32.098Z

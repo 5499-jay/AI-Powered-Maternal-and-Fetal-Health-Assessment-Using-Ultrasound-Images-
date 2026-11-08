@@ -1,0 +1,32 @@
+[
+  {
+    "clinicId": "CLN-2026-001",
+    "clinicName": "St. Jude Women & Children Hospital",
+    "doctorName": "Dr. Sarah Jenkins",
+    "email": "s.jenkins@stjude-maternity.org",
+    "passwordHash": "$2b$10$hZAYYPmKlPlIfbPEQ4IEDu6mXbTgoAAUz8GfYDQbgnWsxLAUPRq3G",
+    "role": "Lead Perinatal Sonographer",
+    "licenseNumber": "MD-8841-OBGYN",
+    "createdAt": "2026-09-01T09:55:37.441Z"
+  },
+  {
+    "clinicId": "CLN-2026-642",
+    "clinicName": "Aastha Diagnostics",
+    "doctorName": "Mansi Pal",
+    "email": "1032230379@tcetmumbai.in",
+    "passwordHash": "$2b$10$uQbyOkxFFcr6WJ9MnsXsYuUCbPZI3oVJQ8dAl7m6tAi3ePqxcSldq",
+    "role": "Lead Perinatal Sonographer",
+    "licenseNumber": "LIC-8840-OB",
+    "createdAt": "2026-09-01T09:55:37.655Z"
+  },
+  {
+    "clinicId": "CLN-2026-912",
+    "clinicName": "Aastha Diagnostics",
+    "doctorName": "Dr. Sandhya Gupta",
+    "email": "aastha.diagnostic@gmail.com",
+    "passwordHash": "$2b$10$kJ3FtYx2m8G/0AjBUwhalOHnT2rlVu8tBwyLp4FUVsXakhvsFnCYC",
+    "role": "Lead Perinatal Sonographer",
+    "licenseNumber": "LIC - 8842 - OB",
+    "createdAt": "2026-09-03T07:40:20.399Z"
+  }
+]

@@ -1,0 +1,1064 @@
+[
+  {
+    "reportId": "REP-2026-XAI-2833",
+    "patientId": "PT-2026-7430",
+    "patientName": "Sophia Patel",
+    "patientAge": 26,
+    "patientLmp": "2025-12-10",
+    "gravidaPara": "G3P2",
+    "clinicalIndication": "Late 2nd Trimester Profile & Femur Evaluation",
+    "scanDate": "2026-08-05",
+    "createdAt": "2026-09-07T08:08:07.680Z",
+    "doctorName": "Dr. Sarah Jenkins",
+    "hospitalName": "St. Jude Women & Children Hospital",
+    "planeType": "Trans-thalamic Biparietal Plane (Head)",
+    "imageQuality": {
+      "rating": "good",
+      "note": "Clear acoustic window with well-defined calvarial echo & thalamic midline."
+    },
+    "gestationalAge": {
+      "weeks": 21,
+      "days": 3,
+      "method": "Biometry-derived (Hadlock BPD/HC)"
+    },
+    "biometry": [
+      {
+        "name": "BPD",
+        "label": "Biparietal Diameter",
+        "valueMm": 49.9,
+        "percentile": 52
+      },
+      {
+        "name": "HC",
+        "label": "Head Circumference",
+        "valueMm": 180.9,
+        "percentile": 55
+      },
+      {
+        "name": "Vp",
+        "label": "Ventricular Atrium Width",
+        "valueMm": 6.8,
+        "percentile": 48
+      },
+      {
+        "name": "CM",
+        "label": "Cisterna Magna Depth",
+        "valueMm": 5.4,
+        "percentile": 50
+      }
+    ],
+    "estimatedFetalWeight": {
+      "grams": 379,
+      "percentile": 52
+    },
+    "observations": [
+      "Trans-thalamic Biparietal plane visualized with cerebral hemisphere symmetry.",
+      "Continuous hyperechoic parietal skull contour with intact midline falx cerebri.",
+      "Ventricular atrium depth (Vp) and cisterna magna are within physiological ranges."
+    ],
+    "riskFlags": [],
+    "overallAssessment": "Head biometry for Sophia Patel (PT-2026-7430) yields BPD of 49.9mm and HC of 180.9mm concordant with 21w 3d. No significant cranial anomalies identified.",
+    "confidence": 95,
+    "modelArchitecture": {
+      "architectureName": "CNN-Transformer Hybrid (EfficientNet-B4 + ViT-B/16)",
+      "cnnFeatureExtractor": "EfficientNet-B4 (Calvarial Contour Extractor)",
+      "transformerEncoder": "Vision Transformer (ViT) Trans-thalamic Attention",
+      "fusionMechanism": "Cross-Attention Biometry Regression",
+      "spatialResolution": "224x224 Patch Embeddings (16x16)",
+      "attentionHeads": 12
+    },
+    "xai": {
+      "primaryFocusRegion": "Skull Calvarium Outer Edge & Thalamic Midline",
+      "clinicalRationale": "Grad-CAM saliency map isolates high feature intensity along the outer calvarial boundary. ViT attention focus concentrated at BPD caliper placement end-points.",
+      "featureAttributions": [
+        {
+          "feature": "Calvarial Outer Border Edge",
+          "importance": 95,
+          "description": "High-contrast skull bone boundary detection by CNN."
+        },
+        {
+          "feature": "Trans-thalamic Cross-Attention",
+          "importance": 91,
+          "description": "ViT patch attention on central thalamic landmark."
+        },
+        {
+          "feature": "Ventricular Atrium Saliency",
+          "importance": 84,
+          "description": "Saliency density at lateral ventricle atrial border."
+        }
+      ],
+      "anatomicalLandmarks": [
+        {
+          "name": "Parietal Skull Calvarium",
+          "xPct": 50,
+          "yPct": 44,
+          "confidence": 96
+        },
+        {
+          "name": "Midline Falx Cerebri",
+          "xPct": 52,
+          "yPct": 48,
+          "confidence": 94
+        },
+        {
+          "name": "Ventricular Atrium",
+          "xPct": 48,
+          "yPct": 54,
+          "confidence": 89
+        }
+      ]
+    },
+    "imageUrl": "/api/uploads/scan-1788768487572-PT20267430.png"
+  },
+  {
+    "reportId": "REP-2026-XAI-2762",
+    "patientId": "PT-2026-4870",
+    "patientName": "Diksha Yadav",
+    "patientAge": 27,
+    "patientLmp": "2000-03-21",
+    "gravidaPara": "G3P1",
+    "clinicalIndication": "Routine 2 trimester anomaly",
+    "scanDate": "2026-08-06",
+    "createdAt": "2026-09-04T17:20:52.258Z",
+    "doctorName": "Dr. Sarah Jenkins",
+    "hospitalName": "St. Jude Women & Children Hospital",
+    "planeType": "Midsagittal Fetal Facial Profile",
+    "imageQuality": {
+      "rating": "excellent",
+      "note": "Midsagittal view demonstrating nasal bone, anterior palate, and nuchal fold."
+    },
+    "gestationalAge": {
+      "weeks": 21,
+      "days": 0,
+      "method": "Biometry-derived (Sagittal Profile)"
+    },
+    "biometry": [
+      {
+        "name": "NB",
+        "label": "Nasal Bone Length",
+        "valueMm": 7.3,
+        "percentile": 56
+      },
+      {
+        "name": "NT",
+        "label": "Nuchal Fold / Translucency",
+        "valueMm": 1.9,
+        "percentile": 45
+      },
+      {
+        "name": "FMF",
+        "label": "Frontomaxillary Facial Angle",
+        "valueMm": 84.2,
+        "percentile": 50
+      }
+    ],
+    "estimatedFetalWeight": {
+      "grams": 391,
+      "percentile": 52
+    },
+    "observations": [
+      "Midsagittal facial profile demonstrated with present hyperechoic nasal bone.",
+      "Intact anterior primary palate and retro-nasal triangle."
+    ],
+    "riskFlags": [],
+    "overallAssessment": "Midsagittal facial profile for Diksha Yadav (PT-2026-4870) shows nasal bone of 7.3mm and NT of 1.9mm. Normal second trimester profile anatomy.",
+    "confidence": 94,
+    "modelArchitecture": {
+      "architectureName": "CNN-Transformer Hybrid (EfficientNet-B4 + ViT-B/16)",
+      "cnnFeatureExtractor": "EfficientNet-B4 (Facial Profile Contour Extractor)",
+      "transformerEncoder": "Vision Transformer (ViT) Nasal & Nuchal Attention",
+      "fusionMechanism": "Cross-Attention Profile Feature Fusion",
+      "spatialResolution": "224x224 Patch Embeddings (16x16)",
+      "attentionHeads": 12
+    },
+    "xai": {
+      "primaryFocusRegion": "Nasal Bone Echo & Nuchal Translucency Fold",
+      "clinicalRationale": "Grad-CAM saliency displays distinct feature activation at the nasal bone and nuchal fold layer. Normal profile anatomical contours verified.",
+      "featureAttributions": [
+        {
+          "feature": "Nasal Bone Hyperechoic Echo",
+          "importance": 96,
+          "description": "Dual line bone & skin layer signal detection."
+        },
+        {
+          "feature": "Nuchal Translucency Fluid Layer",
+          "importance": 87,
+          "description": "Anechoic nuchal space feature extraction."
+        },
+        {
+          "feature": "Retro-nasal Triangle Geometry",
+          "importance": 90,
+          "description": "ViT spatial attention on maxilla alignment."
+        }
+      ],
+      "anatomicalLandmarks": [
+        {
+          "name": "Nasal Bone Landmark",
+          "xPct": 46,
+          "yPct": 38,
+          "confidence": 97
+        },
+        {
+          "name": "Anterior Maxilla",
+          "xPct": 46,
+          "yPct": 45,
+          "confidence": 93
+        },
+        {
+          "name": "Nuchal Fold Region",
+          "xPct": 62,
+          "yPct": 36,
+          "confidence": 91
+        }
+      ]
+    },
+    "imageUrl": "/api/uploads/scan-1788542451999-PT20264870.png"
+  },
+  {
+    "reportId": "REP-2026-XAI-3618",
+    "patientId": "PT-2026-4870",
+    "patientName": "Diksha Yadav",
+    "patientAge": 27,
+    "patientLmp": "2000-03-21",
+    "gravidaPara": "G3P1",
+    "clinicalIndication": "Routine 2 trimester anomaly",
+    "scanDate": "2026-08-06",
+    "createdAt": "2026-09-04T07:16:12.265Z",
+    "doctorName": "Dr. Sarah Jenkins",
+    "hospitalName": "St. Jude Women & Children Hospital",
+    "planeType": "Midsagittal Fetal Facial Profile",
+    "imageQuality": {
+      "rating": "excellent",
+      "note": "Midsagittal view demonstrating nasal bone, anterior palate, and nuchal fold."
+    },
+    "gestationalAge": {
+      "weeks": 20,
+      "days": 3,
+      "method": "Biometry-derived (Sagittal Profile)"
+    },
+    "biometry": [
+      {
+        "name": "NB",
+        "label": "Nasal Bone Length",
+        "valueMm": 7.3,
+        "percentile": 56
+      },
+      {
+        "name": "NT",
+        "label": "Nuchal Fold / Translucency",
+        "valueMm": 1.9,
+        "percentile": 45
+      },
+      {
+        "name": "FMF",
+        "label": "Frontomaxillary Facial Angle",
+        "valueMm": 84.2,
+        "percentile": 50
+      }
+    ],
+    "estimatedFetalWeight": {
+      "grams": 379,
+      "percentile": 52
+    },
+    "observations": [
+      "Midsagittal facial profile demonstrated with present hyperechoic nasal bone.",
+      "Intact anterior primary palate and retro-nasal triangle."
+    ],
+    "riskFlags": [],
+    "overallAssessment": "Midsagittal facial profile for Diksha Yadav (PT-2026-4870) shows nasal bone of 7.3mm and NT of 1.9mm. Normal second trimester profile anatomy.",
+    "confidence": 94,
+    "modelArchitecture": {
+      "architectureName": "CNN-Transformer Hybrid (EfficientNet-B4 + ViT-B/16)",
+      "cnnFeatureExtractor": "EfficientNet-B4 (Facial Profile Contour Extractor)",
+      "transformerEncoder": "Vision Transformer (ViT) Nasal & Nuchal Attention",
+      "fusionMechanism": "Cross-Attention Profile Feature Fusion",
+      "spatialResolution": "224x224 Patch Embeddings (16x16)",
+      "attentionHeads": 12
+    },
+    "xai": {
+      "primaryFocusRegion": "Nasal Bone Echo & Nuchal Translucency Fold",
+      "clinicalRationale": "Grad-CAM saliency displays distinct feature activation at the nasal bone and nuchal fold layer. Normal profile anatomical contours verified.",
+      "featureAttributions": [
+        {
+          "feature": "Nasal Bone Hyperechoic Echo",
+          "importance": 96,
+          "description": "Dual line bone & skin layer signal detection."
+        },
+        {
+          "feature": "Nuchal Translucency Fluid Layer",
+          "importance": 87,
+          "description": "Anechoic nuchal space feature extraction."
+        },
+        {
+          "feature": "Retro-nasal Triangle Geometry",
+          "importance": 90,
+          "description": "ViT spatial attention on maxilla alignment."
+        }
+      ],
+      "anatomicalLandmarks": [
+        {
+          "name": "Nasal Bone Landmark",
+          "xPct": 44,
+          "yPct": 38,
+          "confidence": 97
+        },
+        {
+          "name": "Anterior Maxilla",
+          "xPct": 46,
+          "yPct": 45,
+          "confidence": 93
+        },
+        {
+          "name": "Nuchal Fold Region",
+          "xPct": 62,
+          "yPct": 36,
+          "confidence": 91
+        }
+      ]
+    },
+    "imageUrl": "/api/uploads/scan-1788506172106-PT20264870.png"
+  },
+  {
+    "reportId": "REP-2026-XAI-9546",
+    "patientId": "PT-2026-4870",
+    "patientName": "Diksha Yadav",
+    "patientAge": 27,
+    "patientLmp": "2000-03-21",
+    "gravidaPara": "G3P1",
+    "clinicalIndication": "Routine 2 trimester anomaly",
+    "scanDate": "2026-08-06",
+    "createdAt": "2026-09-04T07:02:16.047Z",
+    "doctorName": "Dr. Sarah Jenkins",
+    "hospitalName": "St. Jude Women & Children Hospital",
+    "planeType": "Femoral Diaphysis Long Axis (Femur FL)",
+    "imageQuality": {
+      "rating": "good",
+      "note": "Straight femoral shaft diaphysis calcification with acoustic shadowing."
+    },
+    "gestationalAge": {
+      "weeks": 20,
+      "days": 4,
+      "method": "Biometry-derived (Hadlock FL)"
+    },
+    "biometry": [
+      {
+        "name": "FL",
+        "label": "Femur Length",
+        "valueMm": 33.8,
+        "percentile": 54
+      },
+      {
+        "name": "HL",
+        "label": "Humerus Length",
+        "valueMm": 32.4,
+        "percentile": 52
+      },
+      {
+        "name": "FL/AC",
+        "label": "Femur to Abdomen Ratio",
+        "valueMm": 21.5,
+        "percentile": 50
+      }
+    ],
+    "estimatedFetalWeight": {
+      "grams": 362,
+      "percentile": 53
+    },
+    "observations": [
+      "Full femoral diaphysis visualized horizontally without curvature artifact.",
+      "Clear posterior acoustic shadowing from calcified bone shaft."
+    ],
+    "riskFlags": [],
+    "overallAssessment": "Femur length scan for Diksha Yadav (PT-2026-4870) demonstrates FL of 33.8mm (54th percentile). Normal long bone growth.",
+    "confidence": 96,
+    "modelArchitecture": {
+      "architectureName": "CNN-Transformer Hybrid (EfficientNet-B4 + ViT-B/16)",
+      "cnnFeatureExtractor": "EfficientNet-B4 (Bone Shaft Edge & Shadow Extractor)",
+      "transformerEncoder": "Vision Transformer (ViT) Diaphysis End-Point Attention",
+      "fusionMechanism": "Cross-Attention Length Regression",
+      "spatialResolution": "224x224 Patch Embeddings (16x16)",
+      "attentionHeads": 12
+    },
+    "xai": {
+      "primaryFocusRegion": "Femoral Shaft Ossification Center & Bone Termini",
+      "clinicalRationale": "Grad-CAM saliency displays intense linear activation along the hyperechoic femoral bone shaft. Acoustic shadowing and end-caps accurately highlighted.",
+      "featureAttributions": [
+        {
+          "feature": "Femoral Shaft Calcification Echo",
+          "importance": 97,
+          "description": "Linear hyperechoic bone shaft feature extraction."
+        },
+        {
+          "feature": "Acoustic Shadowing Edge Contrast",
+          "importance": 92,
+          "description": "CNN feature contrast at bone shadow interface."
+        },
+        {
+          "feature": "Diaphysis Terminal Endpoints",
+          "importance": 88,
+          "description": "ViT attention focus at caliper end-caps."
+        }
+      ],
+      "anatomicalLandmarks": [
+        {
+          "name": "Proximal Femur Endpoint",
+          "xPct": 36,
+          "yPct": 48,
+          "confidence": 97
+        },
+        {
+          "name": "Distal Femur Endpoint",
+          "xPct": 68,
+          "yPct": 51,
+          "confidence": 96
+        },
+        {
+          "name": "Acoustic Shadow Zone",
+          "xPct": 50,
+          "yPct": 65,
+          "confidence": 91
+        }
+      ]
+    },
+    "imageUrl": "/api/uploads/scan-1788505335914-PT20264870.png"
+  },
+  {
+    "reportId": "REP-2026-XAI-9240",
+    "patientId": "PT-2026-4870",
+    "patientName": "Diksha Yadav",
+    "patientAge": 27,
+    "patientLmp": "2000-03-21",
+    "gravidaPara": "G3P1",
+    "clinicalIndication": "Routine 2 trimester anomaly",
+    "scanDate": "2026-08-06",
+    "createdAt": "2026-09-04T07:01:33.987Z",
+    "doctorName": "Dr. Sarah Jenkins",
+    "hospitalName": "St. Jude Women & Children Hospital",
+    "planeType": "Midsagittal Fetal Facial Profile",
+    "imageQuality": {
+      "rating": "excellent",
+      "note": "Midsagittal view demonstrating nasal bone, anterior palate, and nuchal fold."
+    },
+    "gestationalAge": {
+      "weeks": 21,
+      "days": 6,
+      "method": "Biometry-derived (Sagittal Profile)"
+    },
+    "biometry": [
+      {
+        "name": "NB",
+        "label": "Nasal Bone Length",
+        "valueMm": 7.3,
+        "percentile": 56
+      },
+      {
+        "name": "NT",
+        "label": "Nuchal Fold / Translucency",
+        "valueMm": 1.9,
+        "percentile": 45
+      },
+      {
+        "name": "FMF",
+        "label": "Frontomaxillary Facial Angle",
+        "valueMm": 84.2,
+        "percentile": 50
+      }
+    ],
+    "estimatedFetalWeight": {
+      "grams": 385,
+      "percentile": 52
+    },
+    "observations": [
+      "Midsagittal facial profile demonstrated with present hyperechoic nasal bone.",
+      "Intact anterior primary palate and retro-nasal triangle."
+    ],
+    "riskFlags": [],
+    "overallAssessment": "Midsagittal facial profile for Diksha Yadav (PT-2026-4870) shows nasal bone of 7.3mm and NT of 1.9mm. Normal second trimester profile anatomy.",
+    "confidence": 94,
+    "modelArchitecture": {
+      "architectureName": "CNN-Transformer Hybrid (EfficientNet-B4 + ViT-B/16)",
+      "cnnFeatureExtractor": "EfficientNet-B4 (Facial Profile Contour Extractor)",
+      "transformerEncoder": "Vision Transformer (ViT) Nasal & Nuchal Attention",
+      "fusionMechanism": "Cross-Attention Profile Feature Fusion",
+      "spatialResolution": "224x224 Patch Embeddings (16x16)",
+      "attentionHeads": 12
+    },
+    "xai": {
+      "primaryFocusRegion": "Nasal Bone Echo & Nuchal Translucency Fold",
+      "clinicalRationale": "Grad-CAM saliency displays distinct feature activation at the nasal bone and nuchal fold layer. Normal profile anatomical contours verified.",
+      "featureAttributions": [
+        {
+          "feature": "Nasal Bone Hyperechoic Echo",
+          "importance": 96,
+          "description": "Dual line bone & skin layer signal detection."
+        },
+        {
+          "feature": "Nuchal Translucency Fluid Layer",
+          "importance": 87,
+          "description": "Anechoic nuchal space feature extraction."
+        },
+        {
+          "feature": "Retro-nasal Triangle Geometry",
+          "importance": 90,
+          "description": "ViT spatial attention on maxilla alignment."
+        }
+      ],
+      "anatomicalLandmarks": [
+        {
+          "name": "Nasal Bone Landmark",
+          "xPct": 45,
+          "yPct": 38,
+          "confidence": 97
+        },
+        {
+          "name": "Anterior Maxilla",
+          "xPct": 46,
+          "yPct": 45,
+          "confidence": 93
+        },
+        {
+          "name": "Nuchal Fold Region",
+          "xPct": 62,
+          "yPct": 36,
+          "confidence": 91
+        }
+      ]
+    },
+    "imageUrl": "/api/uploads/scan-1788505293829-PT20264870.png"
+  },
+  {
+    "reportId": "REP-2026-XAI-8505",
+    "patientId": "PT-2026-4870",
+    "patientName": "Diksha Yadav",
+    "patientAge": 27,
+    "patientLmp": "2000-03-21",
+    "gravidaPara": "G3P1",
+    "clinicalIndication": "Routine 2 trimester anomaly",
+    "scanDate": "2026-08-06",
+    "createdAt": "2026-09-04T06:48:50.785Z",
+    "doctorName": "Dr. Sarah Jenkins",
+    "hospitalName": "St. Jude Women & Children Hospital",
+    "planeType": "Midsagittal Fetal Facial Profile",
+    "imageQuality": {
+      "rating": "excellent",
+      "note": "Midsagittal view demonstrating nasal bone, anterior palate, and nuchal fold."
+    },
+    "gestationalAge": {
+      "weeks": 21,
+      "days": 2,
+      "method": "Biometry-derived (Sagittal Profile)"
+    },
+    "biometry": [
+      {
+        "name": "NB",
+        "label": "Nasal Bone Length",
+        "valueMm": 6.9,
+        "percentile": 56
+      },
+      {
+        "name": "NT",
+        "label": "Nuchal Fold / Translucency",
+        "valueMm": 3.6,
+        "percentile": 96
+      },
+      {
+        "name": "FMF",
+        "label": "Frontomaxillary Facial Angle",
+        "valueMm": 84.2,
+        "percentile": 50
+      }
+    ],
+    "estimatedFetalWeight": {
+      "grams": 387,
+      "percentile": 52
+    },
+    "observations": [
+      "Midsagittal facial profile demonstrated with present hyperechoic nasal bone.",
+      "Intact anterior primary palate and retro-nasal triangle.",
+      "Nuchal fold / nuchal translucency measures 3.6mm (elevated threshold > 2.5mm)."
+    ],
+    "riskFlags": [
+      {
+        "label": "Elevated Nuchal Fold / Aneuploidy Marker Flag",
+        "severity": "moderate",
+        "detail": "Nuchal fold thickness (3.6mm) is elevated above the 95th percentile threshold. Cell-free DNA (NIPT) screening or genetic consult recommended."
+      }
+    ],
+    "overallAssessment": "Midsagittal facial profile for Diksha Yadav (PT-2026-4870) shows nasal bone of 6.9mm and NT of 3.6mm. Risk indicator flagged: Elevated Nuchal Fold thickness.",
+    "confidence": 94,
+    "modelArchitecture": {
+      "architectureName": "CNN-Transformer Hybrid (EfficientNet-B4 + ViT-B/16)",
+      "cnnFeatureExtractor": "EfficientNet-B4 (Facial Profile Contour Extractor)",
+      "transformerEncoder": "Vision Transformer (ViT) Nasal & Nuchal Attention",
+      "fusionMechanism": "Cross-Attention Profile Feature Fusion",
+      "spatialResolution": "224x224 Patch Embeddings (16x16)",
+      "attentionHeads": 12
+    },
+    "xai": {
+      "primaryFocusRegion": "Nasal Bone Echo & Nuchal Translucency Fold",
+      "clinicalRationale": "Grad-CAM saliency displays distinct feature activation at the nasal bone and nuchal fold layer. Attention weights highlight thickened nuchal fluid space.",
+      "featureAttributions": [
+        {
+          "feature": "Nasal Bone Hyperechoic Echo",
+          "importance": 96,
+          "description": "Dual line bone & skin layer signal detection."
+        },
+        {
+          "feature": "Nuchal Translucency Fluid Layer",
+          "importance": 97,
+          "description": "Anechoic nuchal space feature extraction."
+        },
+        {
+          "feature": "Retro-nasal Triangle Geometry",
+          "importance": 90,
+          "description": "ViT spatial attention on maxilla alignment."
+        }
+      ],
+      "anatomicalLandmarks": [
+        {
+          "name": "Nasal Bone Landmark",
+          "xPct": 42,
+          "yPct": 38,
+          "confidence": 97
+        },
+        {
+          "name": "Anterior Maxilla",
+          "xPct": 46,
+          "yPct": 45,
+          "confidence": 93
+        },
+        {
+          "name": "Nuchal Fold Region",
+          "xPct": 62,
+          "yPct": 36,
+          "confidence": 98
+        }
+      ]
+    },
+    "imageUrl": "/api/uploads/scan-1788504530520-PT20264870.png"
+  },
+  {
+    "reportId": "REP-2026-XAI-8542",
+    "patientId": "PT-2026-4870",
+    "patientName": "Diksha Yadav",
+    "patientAge": 27,
+    "patientLmp": "2000-03-21",
+    "gravidaPara": "G3P1",
+    "clinicalIndication": "Routine 2 trimester anomaly",
+    "scanDate": "2026-08-06",
+    "createdAt": "2026-09-04T06:48:40.791Z",
+    "doctorName": "Dr. Sarah Jenkins",
+    "hospitalName": "St. Jude Women & Children Hospital",
+    "planeType": "Midsagittal Fetal Facial Profile",
+    "imageQuality": {
+      "rating": "excellent",
+      "note": "Midsagittal view demonstrating nasal bone, anterior palate, and nuchal fold."
+    },
+    "gestationalAge": {
+      "weeks": 20,
+      "days": 3,
+      "method": "Biometry-derived (Sagittal Profile)"
+    },
+    "biometry": [
+      {
+        "name": "NB",
+        "label": "Nasal Bone Length",
+        "valueMm": 6.9,
+        "percentile": 56
+      },
+      {
+        "name": "NT",
+        "label": "Nuchal Fold / Translucency",
+        "valueMm": 1.5,
+        "percentile": 45
+      },
+      {
+        "name": "FMF",
+        "label": "Frontomaxillary Facial Angle",
+        "valueMm": 84.2,
+        "percentile": 50
+      }
+    ],
+    "estimatedFetalWeight": {
+      "grams": 375,
+      "percentile": 52
+    },
+    "observations": [
+      "Midsagittal facial profile demonstrated with present hyperechoic nasal bone.",
+      "Intact anterior primary palate and retro-nasal triangle."
+    ],
+    "riskFlags": [],
+    "overallAssessment": "Midsagittal facial profile for Diksha Yadav (PT-2026-4870) shows nasal bone of 6.9mm and NT of 1.5mm. Normal second trimester profile anatomy.",
+    "confidence": 94,
+    "modelArchitecture": {
+      "architectureName": "CNN-Transformer Hybrid (EfficientNet-B4 + ViT-B/16)",
+      "cnnFeatureExtractor": "EfficientNet-B4 (Facial Profile Contour Extractor)",
+      "transformerEncoder": "Vision Transformer (ViT) Nasal & Nuchal Attention",
+      "fusionMechanism": "Cross-Attention Profile Feature Fusion",
+      "spatialResolution": "224x224 Patch Embeddings (16x16)",
+      "attentionHeads": 12
+    },
+    "xai": {
+      "primaryFocusRegion": "Nasal Bone Echo & Nuchal Translucency Fold",
+      "clinicalRationale": "Grad-CAM saliency displays distinct feature activation at the nasal bone and nuchal fold layer. Normal profile anatomical contours verified.",
+      "featureAttributions": [
+        {
+          "feature": "Nasal Bone Hyperechoic Echo",
+          "importance": 96,
+          "description": "Dual line bone & skin layer signal detection."
+        },
+        {
+          "feature": "Nuchal Translucency Fluid Layer",
+          "importance": 87,
+          "description": "Anechoic nuchal space feature extraction."
+        },
+        {
+          "feature": "Retro-nasal Triangle Geometry",
+          "importance": 90,
+          "description": "ViT spatial attention on maxilla alignment."
+        }
+      ],
+      "anatomicalLandmarks": [
+        {
+          "name": "Nasal Bone Landmark",
+          "xPct": 45,
+          "yPct": 38,
+          "confidence": 97
+        },
+        {
+          "name": "Anterior Maxilla",
+          "xPct": 46,
+          "yPct": 45,
+          "confidence": 93
+        },
+        {
+          "name": "Nuchal Fold Region",
+          "xPct": 62,
+          "yPct": 36,
+          "confidence": 91
+        }
+      ]
+    },
+    "imageUrl": "/api/uploads/scan-1788504520529-PT20264870.png"
+  },
+  {
+    "reportId": "REP-2026-XAI-2901",
+    "patientId": "PT-2026-4870",
+    "patientName": "Diksha Yadav",
+    "patientAge": 27,
+    "patientLmp": "2000-03-21",
+    "gravidaPara": "G3P1",
+    "clinicalIndication": "Routine 2 trimester anomaly",
+    "scanDate": "2026-08-06",
+    "createdAt": "2026-09-04T06:47:59.255Z",
+    "doctorName": "Dr. Sarah Jenkins",
+    "hospitalName": "St. Jude Women & Children Hospital",
+    "planeType": "Trans-abdominal Plane (Fetal Abdomen)",
+    "imageQuality": {
+      "rating": "good",
+      "note": "Clear abdominal circumference skin line with portal vein confluence."
+    },
+    "gestationalAge": {
+      "weeks": 20,
+      "days": 3,
+      "method": "Biometry-derived (Hadlock Composite AC)"
+    },
+    "biometry": [
+      {
+        "name": "AC",
+        "label": "Abdominal Circumference",
+        "valueMm": 158.5,
+        "percentile": 53
+      },
+      {
+        "name": "TAD",
+        "label": "Transverse Abdominal Diameter",
+        "valueMm": 49.5,
+        "percentile": 52
+      },
+      {
+        "name": "APAD",
+        "label": "Anteroposterior Abdominal Diameter",
+        "valueMm": 50.2,
+        "percentile": 54
+      }
+    ],
+    "estimatedFetalWeight": {
+      "grams": 411,
+      "percentile": 54
+    },
+    "observations": [
+      "Trans-abdominal plane demonstrating circular abdominal cross-section.",
+      "Anechoic fetal stomach bubble identified in left upper quadrant.",
+      "Abdominal circumference and soft tissue mass are concordant for gestational age."
+    ],
+    "riskFlags": [],
+    "overallAssessment": "Abdominal biometry for Diksha Yadav (PT-2026-4870) shows an AC of 158.5mm (53th percentile). Normal abdominal growth parameters.",
+    "confidence": 94,
+    "modelArchitecture": {
+      "architectureName": "CNN-Transformer Hybrid (EfficientNet-B4 + ViT-B/16)",
+      "cnnFeatureExtractor": "EfficientNet-B4 (Abdominal Wall Contour Extractor)",
+      "transformerEncoder": "Vision Transformer (ViT) Portal Vein & Stomach Attention",
+      "fusionMechanism": "Cross-Attention Circumference Regression",
+      "spatialResolution": "224x224 Patch Embeddings (16x16)",
+      "attentionHeads": 12
+    },
+    "xai": {
+      "primaryFocusRegion": "Abdominal Skin Perimeter & Portal Confluence",
+      "clinicalRationale": "Grad-CAM feature saliency map highlights the circular abdominal wall edge. Stomach bubble and portal vein landmarks show strong attention weights.",
+      "featureAttributions": [
+        {
+          "feature": "Abdominal Wall Perimeter Contour",
+          "importance": 94,
+          "description": "Circular soft tissue perimeter feature extraction."
+        },
+        {
+          "feature": "Stomach Bubble Echo Saliency",
+          "importance": 90,
+          "description": "ViT patch attention on left anterior stomach landmark."
+        },
+        {
+          "feature": "Subcutaneous Fat Layer Thickness",
+          "importance": 82,
+          "description": "CNN feature contrast along abdominal wall fat boundary."
+        }
+      ],
+      "anatomicalLandmarks": [
+        {
+          "name": "Abdominal Wall Boundary",
+          "xPct": 50,
+          "yPct": 52,
+          "confidence": 95
+        },
+        {
+          "name": "Fetal Stomach Bubble",
+          "xPct": 38,
+          "yPct": 42,
+          "confidence": 93
+        },
+        {
+          "name": "Portal Vein Confluence",
+          "xPct": 55,
+          "yPct": 49,
+          "confidence": 90
+        }
+      ]
+    },
+    "imageUrl": "/api/uploads/scan-1788504479124-PT20264870.png"
+  },
+  {
+    "reportId": "REP-2026-XAI-8735",
+    "patientId": "PT-2026-4870",
+    "patientName": "Diksha Yadav",
+    "patientAge": 27,
+    "patientLmp": "2000-03-21",
+    "gravidaPara": "G3P1",
+    "clinicalIndication": "Routine 2 trimester anomaly",
+    "scanDate": "2026-08-06",
+    "createdAt": "2026-09-04T06:39:59.288Z",
+    "doctorName": "Dr. Sarah Jenkins",
+    "hospitalName": "St. Jude Women & Children Hospital",
+    "planeType": "Midsagittal Fetal Facial Profile",
+    "imageQuality": {
+      "rating": "excellent",
+      "note": "Midsagittal view demonstrating nasal bone, anterior palate, and nuchal fold."
+    },
+    "gestationalAge": {
+      "weeks": 21,
+      "days": 6,
+      "method": "Biometry-derived (Sagittal Profile)"
+    },
+    "biometry": [
+      {
+        "name": "NB",
+        "label": "Nasal Bone Length",
+        "valueMm": 7.3,
+        "percentile": 56
+      },
+      {
+        "name": "NT",
+        "label": "Nuchal Fold / Translucency",
+        "valueMm": 1.9,
+        "percentile": 45
+      },
+      {
+        "name": "FMF",
+        "label": "Frontomaxillary Facial Angle",
+        "valueMm": 84.2,
+        "percentile": 50
+      }
+    ],
+    "estimatedFetalWeight": {
+      "grams": 391,
+      "percentile": 52
+    },
+    "observations": [
+      "Midsagittal facial profile demonstrated with present hyperechoic nasal bone.",
+      "Intact anterior primary palate and retro-nasal triangle."
+    ],
+    "riskFlags": [],
+    "overallAssessment": "Midsagittal facial profile for Diksha Yadav (PT-2026-4870) shows nasal bone of 7.3mm and NT of 1.9mm. Normal second trimester profile anatomy.",
+    "confidence": 94,
+    "modelArchitecture": {
+      "architectureName": "CNN-Transformer Hybrid (EfficientNet-B4 + ViT-B/16)",
+      "cnnFeatureExtractor": "EfficientNet-B4 (Facial Profile Contour Extractor)",
+      "transformerEncoder": "Vision Transformer (ViT) Nasal & Nuchal Attention",
+      "fusionMechanism": "Cross-Attention Profile Feature Fusion",
+      "spatialResolution": "224x224 Patch Embeddings (16x16)",
+      "attentionHeads": 12
+    },
+    "xai": {
+      "primaryFocusRegion": "Nasal Bone Echo & Nuchal Translucency Fold",
+      "clinicalRationale": "Grad-CAM saliency displays distinct feature activation at the nasal bone and nuchal fold layer. Normal profile anatomical contours verified.",
+      "featureAttributions": [
+        {
+          "feature": "Nasal Bone Hyperechoic Echo",
+          "importance": 96,
+          "description": "Dual line bone & skin layer signal detection."
+        },
+        {
+          "feature": "Nuchal Translucency Fluid Layer",
+          "importance": 87,
+          "description": "Anechoic nuchal space feature extraction."
+        },
+        {
+          "feature": "Retro-nasal Triangle Geometry",
+          "importance": 90,
+          "description": "ViT spatial attention on maxilla alignment."
+        }
+      ],
+      "anatomicalLandmarks": [
+        {
+          "name": "Nasal Bone Landmark",
+          "xPct": 46,
+          "yPct": 38,
+          "confidence": 97
+        },
+        {
+          "name": "Anterior Maxilla",
+          "xPct": 46,
+          "yPct": 45,
+          "confidence": 93
+        },
+        {
+          "name": "Nuchal Fold Region",
+          "xPct": 62,
+          "yPct": 36,
+          "confidence": 91
+        }
+      ]
+    },
+    "imageUrl": "/api/uploads/scan-1788503999036-PT20264870.png"
+  },
+  {
+    "reportId": "REP-2026-XAI-7128",
+    "patientId": "PT-2026-4870",
+    "patientName": "Diksha Yadav",
+    "patientAge": 27,
+    "patientLmp": "2000-03-21",
+    "gravidaPara": "G3P1",
+    "clinicalIndication": "Routine 2 trimester anomaly",
+    "scanDate": "2026-08-06",
+    "createdAt": "2026-09-03T08:27:24.298Z",
+    "doctorName": "Dr. Sarah Jenkins",
+    "hospitalName": "St. Jude Women & Children Hospital",
+    "planeType": "Trans-thalamic Biparietal Plane (Head)",
+    "imageQuality": {
+      "rating": "good",
+      "note": "Clear acoustic window with well-defined calvarial echo & thalamic midline."
+    },
+    "gestationalAge": {
+      "weeks": 20,
+      "days": 4,
+      "method": "Biometry-derived (Hadlock BPD/HC)"
+    },
+    "biometry": [
+      {
+        "name": "BPD",
+        "label": "Biparietal Diameter",
+        "valueMm": 48.6,
+        "percentile": 52
+      },
+      {
+        "name": "HC",
+        "label": "Head Circumference",
+        "valueMm": 179.1,
+        "percentile": 57
+      },
+      {
+        "name": "Vp",
+        "label": "Ventricular Atrium Width",
+        "valueMm": 8,
+        "percentile": 48
+      },
+      {
+        "name": "CM",
+        "label": "Cisterna Magna Depth",
+        "valueMm": 5.4,
+        "percentile": 50
+      }
+    ],
+    "estimatedFetalWeight": {
+      "grams": 371,
+      "percentile": 52
+    },
+    "observations": [
+      "Trans-thalamic Biparietal plane visualized with cerebral hemisphere symmetry.",
+      "Continuous hyperechoic parietal skull contour with intact midline falx cerebri.",
+      "Ventricular atrium depth (Vp) and cisterna magna are within physiological ranges."
+    ],
+    "riskFlags": [],
+    "overallAssessment": "Head biometry for Diksha Yadav (PT-2026-4870) yields BPD of 48.6mm and HC of 179.1mm concordant with 20w 4d. No significant cranial anomalies identified.",
+    "confidence": 95,
+    "modelArchitecture": {
+      "architectureName": "CNN-Transformer Hybrid (EfficientNet-B4 + ViT-B/16)",
+      "cnnFeatureExtractor": "EfficientNet-B4 (Calvarial Contour Extractor)",
+      "transformerEncoder": "Vision Transformer (ViT) Trans-thalamic Attention",
+      "fusionMechanism": "Cross-Attention Biometry Regression",
+      "spatialResolution": "224x224 Patch Embeddings (16x16)",
+      "attentionHeads": 12
+    },
+    "xai": {
+      "primaryFocusRegion": "Skull Calvarium Outer Edge & Thalamic Midline",
+      "clinicalRationale": "Grad-CAM saliency map isolates high feature intensity along the outer calvarial boundary. ViT attention focus concentrated at BPD caliper placement end-points.",
+      "featureAttributions": [
+        {
+          "feature": "Calvarial Outer Border Edge",
+          "importance": 95,
+          "description": "High-contrast skull bone boundary detection by CNN."
+        },
+        {
+          "feature": "Trans-thalamic Cross-Attention",
+          "importance": 91,
+          "description": "ViT patch attention on central thalamic landmark."
+        },
+        {
+          "feature": "Ventricular Atrium Saliency",
+          "importance": 84,
+          "description": "Saliency density at lateral ventricle atrial border."
+        }
+      ],
+      "anatomicalLandmarks": [
+        {
+          "name": "Parietal Skull Calvarium",
+          "xPct": 47,
+          "yPct": 44,
+          "confidence": 96
+        },
+        {
+          "name": "Midline Falx Cerebri",
+          "xPct": 52,
+          "yPct": 48,
+          "confidence": 94
+        },
+        {
+          "name": "Ventricular Atrium",
+          "xPct": 48,
+          "yPct": 54,
+          "confidence": 89
+        }
+      ]
+    },
+    "imageUrl": "/api/uploads/scan-1788424044108-PT20264870.png"
+  }
+]
